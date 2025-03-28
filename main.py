@@ -70,20 +70,28 @@ def run_shooting(starting_crit_chance, crit_chance_per_hit, sample_size, logfile
 
 def evaluate_results(crit_average_history, starting_crit_chance_list):
     # evaluate results
+    
     # calculate absolute crit gain for each starting crit chance (difference to starting crit chance)
     crit_gain = [0] * len(crit_average_history)
     for i in range(len(crit_average_history)):
         crit_gain[i] = crit_average_history[i] - starting_crit_chance_list[i]
+    
     # calculate relative crit gain for each starting crit chance
     crit_gain_relative = [0] * len(crit_average_history)
     for i in range(len(crit_average_history)):
         crit_gain_relative[i] = crit_gain[i] / starting_crit_chance_list[i] if starting_crit_chance_list[i] != 0 else 0
 
-    return crit_gain, crit_gain_relative
+    # calculate crit mod payoff. meaning how much crit chances comes from the starting crit chance
+    # assuming youre using creeping bulseye
+    crit_mod_payoff = [0] * len(crit_average_history)
+    for i in range(len(crit_average_history)):
+        crit_mod_payoff[i] = (2/3) * starting_crit_chance_list[i] / crit_average_history[i] if crit_average_history[i] != 0 else 0
+
+    return crit_gain, crit_gain_relative, crit_mod_payoff
 
 
 
-def finalize_log_and_plot(logfile, crit_average_history, starting_crit_chance_list, crit_gain, crit_gain_relative):
+def finalize_log_and_plot(logfile, crit_average_history, starting_crit_chance_list, crit_gain, crit_gain_relative, crit_mod_payoff):
     # logfile.write average crit chance for each starting crit chance
     logfile.write("\n\n\n")
     logfile.write("Average crit chance for each starting crit chance:\n")
@@ -108,6 +116,14 @@ def finalize_log_and_plot(logfile, crit_average_history, starting_crit_chance_li
     # plot relative crit gain for each starting crit chance
     plotting(starting_crit_chance_list, crit_gain_relative, "Relative_crit_gain")
 
+    # logfile.write crit mod payoff for each starting crit chance
+    logfile.write("\n\n\n")
+    logfile.write("Crit mod payoff for each starting crit chance:\n")
+    for i in range(len(crit_average_history)):
+        logfile.write(f'Starting crit chance: {100 * starting_crit_chance_list[i]:.2f}% - Crit mod payoff: {100 * crit_mod_payoff[i]:.2f}%\n')
+    # plot crit mod payoff for each starting crit chance
+    plotting(starting_crit_chance_list, crit_mod_payoff, "Crit_mod_payoff")
+
 
 
 def main():
@@ -130,10 +146,10 @@ def main():
         crit_average_history.append(run_shooting(starting_crit_chance, crit_chance_per_hit, sample_size, logfile))
 
     # evaluate results
-    crit_gain, crit_gain_relative = evaluate_results(crit_average_history, starting_crit_chance_list)
+    crit_gain, crit_gain_relative, crit_mod_payoff = evaluate_results(crit_average_history, starting_crit_chance_list)
 
     # finaliize log and plot
-    finalize_log_and_plot(logfile, crit_average_history, starting_crit_chance_list, crit_gain, crit_gain_relative)
+    finalize_log_and_plot(logfile, crit_average_history, starting_crit_chance_list, crit_gain, crit_gain_relative, crit_mod_payoff)
     
     # close logfile
     logfile.close()
