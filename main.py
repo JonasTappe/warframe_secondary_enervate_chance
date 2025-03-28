@@ -19,7 +19,7 @@ def main():
     # sample size
     sample_size = 100000
     # starting crit chance
-    starting_crit_chance_list = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+    starting_crit_chance_list = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
     # crit chance per hit
     crit_chance_per_hit = 0.1
     # storage for average crit chance

@@ -1,5 +1,6 @@
 import random
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 
@@ -11,8 +12,11 @@ def plotting(list_1, list_2, name):
     plt.xlabel('Crit Chance without Enervate')
     plt.ylabel(name)
     plt.title('Average crit chance vs starting crit chance')
+
+    # Save and clear the plot
     plt.savefig('./data/' + name + '.png')
     plt.clf()
+
 
 def run_shooting(starting_crit_chance, crit_chance_per_hit, sample_size, logfile):
     # starting crit chance
