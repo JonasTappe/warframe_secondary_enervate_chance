@@ -1,0 +1,122 @@
+
+Starting crit chance: 0.0%
+Results:Average crit chance: 107.82%
+Percentage of T0 crits: 22.01%
+Percentage of T1 crits: 48.72%
+Percentage of T2 crits: 28.71%
+Percentage of T3 crits: 0.56%
+
+Starting crit chance: 10.0%
+Results:Average crit chance: 112.85%
+Percentage of T0 crits: 18.49%
+Percentage of T1 crits: 50.72%
+Percentage of T2 crits: 30.22%
+Percentage of T3 crits: 0.56%
+
+Starting crit chance: 20.0%
+Results:Average crit chance: 117.86%
+Percentage of T0 crits: 15.19%
+Percentage of T1 crits: 52.38%
+Percentage of T2 crits: 31.82%
+Percentage of T3 crits: 0.61%
+
+Starting crit chance: 30.0%
+Results:Average crit chance: 122.87%
+Percentage of T0 crits: 12.10%
+Percentage of T1 crits: 53.63%
+Percentage of T2 crits: 33.59%
+Percentage of T3 crits: 0.69%
+
+Starting crit chance: 40.0%
+Results:Average crit chance: 128.07%
+Percentage of T0 crits: 9.04%
+Percentage of T1 crits: 54.55%
+Percentage of T2 crits: 35.69%
+Percentage of T3 crits: 0.71%
+
+Starting crit chance: 50.0%
+Results:Average crit chance: 133.14%
+Percentage of T0 crits: 6.32%
+Percentage of T1 crits: 54.97%
+Percentage of T2 crits: 37.95%
+Percentage of T3 crits: 0.75%
+
+Starting crit chance: 60.0%
+Results:Average crit chance: 138.06%
+Percentage of T0 crits: 4.14%
+Percentage of T1 crits: 54.42%
+Percentage of T2 crits: 40.68%
+Percentage of T3 crits: 0.76%
+
+Starting crit chance: 70.0%
+Results:Average crit chance: 142.93%
+Percentage of T0 crits: 2.28%
+Percentage of T1 crits: 53.29%
+Percentage of T2 crits: 43.67%
+Percentage of T3 crits: 0.77%
+
+Starting crit chance: 80.0%
+Results:Average crit chance: 148.09%
+Percentage of T0 crits: 0.84%
+Percentage of T1 crits: 51.10%
+Percentage of T2 crits: 47.19%
+Percentage of T3 crits: 0.87%
+
+Starting crit chance: 90.0%
+Results:Average crit chance: 153.22%
+Percentage of T0 crits: 0.00%
+Percentage of T1 crits: 47.69%
+Percentage of T2 crits: 51.40%
+Percentage of T3 crits: 0.91%
+
+Starting crit chance: 100.0%
+Results:Average crit chance: 158.22%
+Percentage of T0 crits: 0.00%
+Percentage of T1 crits: 42.81%
+Percentage of T2 crits: 56.15%
+Percentage of T3 crits: 1.03%
+
+
+
+Average crit chance for each starting crit chance:
+Starting crit chance: 0.00% - Average crit chance: 107.82%
+Starting crit chance: 10.00% - Average crit chance: 112.85%
+Starting crit chance: 20.00% - Average crit chance: 117.86%
+Starting crit chance: 30.00% - Average crit chance: 122.87%
+Starting crit chance: 40.00% - Average crit chance: 128.07%
+Starting crit chance: 50.00% - Average crit chance: 133.14%
+Starting crit chance: 60.00% - Average crit chance: 138.06%
+Starting crit chance: 70.00% - Average crit chance: 142.93%
+Starting crit chance: 80.00% - Average crit chance: 148.09%
+Starting crit chance: 90.00% - Average crit chance: 153.22%
+Starting crit chance: 100.00% - Average crit chance: 158.22%
+
+
+
+Absolute crit gain for each starting crit chance:
+Starting crit chance: 0.00% - Absolute crit gain: 107.82 added %
+Starting crit chance: 10.00% - Absolute crit gain: 102.85 added %
+Starting crit chance: 20.00% - Absolute crit gain: 97.86 added %
+Starting crit chance: 30.00% - Absolute crit gain: 92.87 added %
+Starting crit chance: 40.00% - Absolute crit gain: 88.07 added %
+Starting crit chance: 50.00% - Absolute crit gain: 83.14 added %
+Starting crit chance: 60.00% - Absolute crit gain: 78.06 added %
+Starting crit chance: 70.00% - Absolute crit gain: 72.93 added %
+Starting crit chance: 80.00% - Absolute crit gain: 68.09 added %
+Starting crit chance: 90.00% - Absolute crit gain: 63.22 added %
+Starting crit chance: 100.00% - Absolute crit gain: 58.22 added %
+
+
+
+Relative crit gain for each starting crit chance:
+Starting crit chance: 0.00% - Relative crit gain: 0.00%
+Starting crit chance: 10.00% - Relative crit gain: 1028.54%
+Starting crit chance: 20.00% - Relative crit gain: 489.27%
+Starting crit chance: 30.00% - Relative crit gain: 309.57%
+Starting crit chance: 40.00% - Relative crit gain: 220.18%
+Starting crit chance: 50.00% - Relative crit gain: 166.28%
+Starting crit chance: 60.00% - Relative crit gain: 130.11%
+Starting crit chance: 70.00% - Relative crit gain: 104.18%
+Starting crit chance: 80.00% - Relative crit gain: 85.11%
+Starting crit chance: 90.00% - Relative crit gain: 70.25%
+Starting crit chance: 100.00% - Relative crit gain: 58.22%
